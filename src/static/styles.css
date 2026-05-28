@@ -16,8 +16,12 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
@@ -26,6 +30,21 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+header .branding {
+  min-width: 220px;
+}
+
+#user-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#user-status {
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 main {
@@ -162,6 +181,16 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+.login-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#login-container {
+  max-width: 500px;
 }
 
 .message {
